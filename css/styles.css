@@ -60,9 +60,12 @@ button{
 }
 .link{
     color: var(--label-color);
-    height: 80px;
     display: flex;
     align-items: center;
+}
+
+.menu-link .link{
+    height: 80px;
 }
 .link.active{
     color: var(--color-blue);
@@ -416,10 +419,13 @@ address {
     align-items: flex-start;
 }
 
-.social-footer{
+.info-footer{
     color: white;
     font-size: 14px;
     font-weight: 700;
+    font-family: inherit;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
 }
 .contact-footer{
     margin-right: 70px;
@@ -477,6 +483,7 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 35px 39px 0 41px;
 }
 .btn-close{
     width: 30px;
@@ -491,4 +498,54 @@ main{
 .btn-close::after{
     content: "X";
     text-align: center;
+}
+.suscribe-form{
+    display: flex;
+    direction: row;
+}
+.ipt-suscribe{
+    height: 50px;
+    width: 358px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px 16px;
+    margin-right: 12px;
+}
+.ipt-suscribe::placeholder{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+}
+.ipt-suscribe:focus {
+    color: rgba(255, 255, 255, 0.60);
+}
+.btn-suscribe{
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background: var(--color-blue);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.cont-suscribe-form{
+    margin-left: 93px;
+}
+.suscribe-form{
+    padding-top: 20px;
+}
+.icon-suscribe-foot{
+    fill: white;
+    margin-left: 20px;
+}
+.form-order{
+    display: flex;
+    direction: column;
 }
