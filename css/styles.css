@@ -491,12 +491,15 @@ main{
     position: absolute; /* Posición absoluta para que el botón se ubique en la esquina superior derecha */
     top: 8px; /* Espacio desde la parte superior del modal */
     right: 8px; /* Espacio desde la parte derecha del modal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.10);
     cursor: pointer;
 }
 .btn-close::after{
-    content: "X";
+    /*content: "X";*/
     text-align: center;
 }
 .suscribe-form{
@@ -545,7 +548,96 @@ main{
     fill: white;
     margin-left: 20px;
 }
-.form-order{
+.flex-column{
     display: flex;
-    direction: column;
+    flex-direction: column;
+}
+.form-order{
+    align-items: center;
+}
+.tittle-form{
+    color: var(--label-color);
+    text-align: center;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    margin-bottom: 12px;
+}
+.label-text{
+    color: var(--text-color);
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+.form-label{
+    position: relative;
+    margin-bottom: 10px;
+}
+.form-input{
+    width: 448px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    padding: 11px 0px 11px 42px;
+}
+.form-textarea{
+    height: 120px;
+    padding: 12px 16px;
+}
+.icon-form{
+    fill: rgba(33, 33, 33, 1);
+    position: absolute;
+    top: 50%;
+    left: 12px;
+}
+.icon-close{
+    fill: var(--label-color);
+}
+.icon-close:hover{
+    fill: var(--color-blue);
+}
+.form-textarea::placeholder{
+    color: rgba(117, 117, 117, 0.50);
+    font-size: 12px;
+}
+.form-input:focus-within{
+    border: 1px solid var(--color-blue);
+}
+.icon-form:focus-within{
+    fill: var(--color-blue);
+}
+.terms{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 25px;
+}
+.text-terms{
+    color: var(--text-color);
+    font-size: 14px;
+}
+.check-terms{
+    margin-right: 5px;
+    background-image: url('../images/icons.svg#icon-check');
+    background-size: cover;
+    width: 16px;
+    height: 15px;
+    appearance: none;
+    cursor: pointer;
+}
+.check-terms:checked{
+    background-image: url("../images/icons.svg#icon-checked");
+}
+.btn-form{
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background: var(--color-blue);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
 }
