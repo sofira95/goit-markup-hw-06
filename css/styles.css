@@ -607,7 +607,7 @@ main{
 .form-input:focus + .icon-form {
     fill: var(--color-blue);
 }
-
+/*
 .terms{
     display: flex;
     flex-direction: row;
@@ -629,6 +629,37 @@ main{
 }
 .check-terms:checked{
     background-image: url("../images/icons.svg#icon-checked");
+}*/
+.terms {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 25px;
+}
+
+.terms::before {
+    content: '';
+    display: flex;
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--text-color);
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 9px;
+    margin-bottom: 20px;
+}
+
+.text-terms {
+    color: var(--text-color);
+    font-size: 14px;
+}
+.check-terms {
+    display: none;
+}
+.check-terms:checked + .terms::before {
+    background-image: url(../images/iconcheck.svg);
+    background-origin: border-box;
+    border-color: var(--accent-color);
 }
 .btn-form{
     width: 200px;

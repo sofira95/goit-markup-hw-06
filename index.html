@@ -315,51 +315,6 @@
                     </ul>
                 </div>
             </section>
-            <div data-modal class="backdrop is-hidden">
-                <div class="modal">
-                    <button data-modal-close class="btn-close">
-                        <svg class="icon-close icon" width="18" height="18">
-                            <use href="./images/icons.svg#icon-close"></use>
-                        </svg>
-                    </button>
-                    <form name="form-order" autocomplete="on" class="form-order flex-column">
-                        <div class="input-container">
-                            <p class="tittle-form">Deje sus datos, nos contactaremos con usted</p>
-                            <label class="form-label flex-column" for="ipt-username">
-                                <span class="label-text">Nombre</span>
-                                <input type="text" class="form-input" name="username" id="ipt-username">
-                                <svg class="icon-form icon" width="18" height="18">
-                                    <use href="./images/icons.svg#icon-user"></use>
-                                </svg>
-                            </label>
-                            <label class="form-label flex-column" for="ipt-phone">
-                                <span class="label-text">Teléfono</span>
-                                <input type="text" class="form-input" name="phone" id="ipt-phone">
-                                <svg class="icon-form icon" width="18" height="18">
-                                    <use href="./images/icons.svg#icon-phone"></use>
-                                </svg>
-                            </label>
-                            <label class="form-label flex-column" for="ipt-mail">
-                                <span class="label-text">E-mail</span>                                
-                                <input type="text" class="form-input" name="mail" id="ipt-mail">
-                                <svg class="icon-form icon" width="18" height="18">
-                                    <use href="./images/icons.svg#icon-mail"></use>
-                                </svg>
-                            </label>
-                            <label class="form-label flex-column" for="ipt-coments">
-                                <span class="label-text">Comentarios</span>
-                                <textarea name="coments" class="form-input form-textarea" rows="5" placeholder="Introduzca el texto" id="ipt-coments"></textarea>
-                            </label>
-                            <label class="terms">
-                                <input type="checkbox" name="terms" class="check-terms" value="acepted"/>
-                                <p class="text-terms">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</p>
-                            </label>
-                        </div>
-                        
-                        <button type="submit" class="btn-form">Enviar</button>
-                    </form>
-                </div>
-            </div>
         </main>
         <footer class="footer-page">
             <div class="container">
@@ -429,6 +384,50 @@
                 </div>
             </div>
         </footer>
+        <div data-modal class="backdrop is-hidden">
+            <div class="modal">
+                <button data-modal-close class="btn-close">
+                    <svg class="icon-close icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <form name="form-order" autocomplete="on" class="form-order flex-column">
+                    <div class="input-container">
+                        <p class="tittle-form">Deje sus datos, nos contactaremos con usted</p>
+                        <label class="form-label flex-column" for="ipt-username">
+                            <span class="label-text">Nombre</span>
+                            <input type="text" class="form-input" name="username" id="ipt-username">
+                            <svg class="icon-form icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-user"></use>
+                            </svg>
+                        </label>
+                        <label class="form-label flex-column" for="ipt-phone">
+                            <span class="label-text">Teléfono</span>
+                            <input type="text" class="form-input" name="phone" id="ipt-phone">
+                            <svg class="icon-form icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                        </label>
+                        <label class="form-label flex-column" for="ipt-mail">
+                            <span class="label-text">E-mail</span>                                
+                            <input type="text" class="form-input" name="mail" id="ipt-mail">
+                            <svg class="icon-form icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-mail"></use>
+                            </svg>
+                        </label>
+                        <label class="form-label flex-column" for="ipt-coments">
+                            <span class="label-text">Comentarios</span>
+                            <textarea name="coments" class="form-input form-textarea" rows="5" placeholder="Introduzca el texto" id="ipt-coments"></textarea>
+                        </label>
+                        <input type="checkbox" id="terms" name="terms" class="check-terms" value="acepted"/>
+                        <label for="terms" class="terms">
+                        <p class="text-terms">Estoy de acuerdo con el bolet?n informativo y acepto los T?rminos y Condiciones</p>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-form">Enviar</button>
+                </form>
+            </div>
+        </div>
         <script src="./js/modal.js"></script>
     </body>
 </html>
